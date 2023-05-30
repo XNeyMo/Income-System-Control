@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 import json
 from fastapi.responses import HTMLResponse
-from fastapi.middleware.cors import CORSMiddleware
 
 # Importing required services and models
 from services.createPerson import create_person
@@ -14,14 +13,7 @@ from services.constans import dataPath
 
 # Initializing the FastAPI app
 app = FastAPI()
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+app.title = "Income System Control"
 
 @app.get("/", tags=['home'])
 def message():
@@ -34,7 +26,10 @@ def message():
 # people data from to database
 @app.get("/people")
 async def get_people():
-    return {"message": "Dato obtenido"}
+    with open(dataPath, "r") as f:
+        data = json.load(f)
+
+    return data['people']
 
 # A GET endpoint to retrieve all places data from a database
 @app.get("/places")
@@ -79,7 +74,3 @@ async def create(place: PlaceIn):
 async def create(event: EventIn):
     createEvent = create_event(event)
     return {"Event": createEvent}
-
-
-
-
