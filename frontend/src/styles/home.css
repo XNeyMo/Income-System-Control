@@ -1,0 +1,27 @@
+.up, .down {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.up {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.down {
+    margin-top: 4%;
+}
+
+.p-up {
+    margin-left: 10%;
+}
+
+.p-down {
+    margin-right: 10%;
+}
+
+img {
+    border-radius: 20px;
+}

@@ -1,0 +1,67 @@
+:root {
+    --dark: #2e5381;
+    --intermedium: #d2d9e3;
+    --light: #FFFFFF;
+}
+
+.sl-form {
+    margin: auto 20%;
+    font-size: 110%;
+    text-align: start;
+}
+
+.sl-form input[type="text"], .sl-form input[type="email"], .sl-form input[type="password"], .sl-form input[type="tel"] {
+  width: 100%;
+  height: 1.5vw;
+  margin-bottom: 3%;
+  border: var(--dark) 1px solid;
+}
+
+.sl-form input[type="submit"],
+ input[type="submit"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    font-size: 100%;
+    font-weight: 800;
+    color: var(--dark);
+    border: var(--dark) 2px solid;
+    background-color: var(--light);
+    cursor: pointer;
+}
+
+.sl-form input[type="submit"]:hover,
+ input[type="submit"]:hover {
+    color: var(--light);
+    border: var(--light) 2px solid;
+    background-color: var(--dark);
+}
+
+.va-form {
+    margin: auto 20%;
+    margin-top: 40px;
+    font-size: 110%;
+    text-align: start;
+}
+
+.va-form input[type="text"], .va-form input[type="email"], .va-form input[type="password"], .va-form input[type="tel"], .va-form input[type="time"], .va-form input[type="date"]{
+    width: 100%;
+    height: 1.5vw;
+    margin-bottom: 3%;
+    border: var(--dark) 1px solid;
+}
+
+.c-form {
+    margin: auto 20%;
+    margin-top: 5%;
+    font-size: 110%;
+    text-align: start;
+}
+
+.c-form input[type="text"] {
+    width: 100%;
+    height: 1.5vw;
+    margin-bottom: 3%;
+    border: var(--dark) 1px solid;
+}
