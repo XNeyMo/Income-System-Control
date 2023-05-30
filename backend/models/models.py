@@ -7,10 +7,10 @@ class PersonIn(BaseModel):
     telephone(str): The telephone number of the person.
     id(int): The identification number of the person.
     """
-    name: str
+    fullName: str
     email: str
-    telephone: str
-    id: int 
+    phone: str
+    personalID: int
 
 class PlaceIn(BaseModel):
     """

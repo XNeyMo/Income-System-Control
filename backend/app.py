@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 import json
 from fastapi.responses import HTMLResponse
+from fastapi.middleware.cors import CORSMiddleware
 
 # Importing required services and models
 from services.createPerson import create_person
@@ -14,6 +15,14 @@ from services.constans import dataPath
 # Initializing the FastAPI app
 app = FastAPI()
 app.title = "Income System Control"
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/", tags=['home'])
 def message():
