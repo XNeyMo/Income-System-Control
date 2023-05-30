@@ -11,6 +11,7 @@ class PersonIn(BaseModel):
     email: str
     phone: str
     personalID: int
+    qrCodeImage: str
 
 class PlaceIn(BaseModel):
     """
@@ -50,10 +51,9 @@ class EventIn(BaseModel):
     timeOut (int): The time when the event ends.
     date (str): The date when the event takes place.
     """
-    place: PlaceIn
-    id: int
-    timeIn: int
-    timeOut: int
+    eventID: str
+    entryTime: str
+    exitTime: str
     date: str
 
 class VisitorIn(BaseModel):

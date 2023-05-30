@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import QRious from 'qrious';
 import '../../styles/forms.css';
 
 const AuthorizedPersonnelComponent = () => {
@@ -9,6 +10,15 @@ const AuthorizedPersonnelComponent = () => {
     const [personalID, setPersonalID] = useState('');
 
     const handleSubmit = async (event) => {
+        // Create temporary canvas
+        const canvas = document.createElement('canvas');
+        new QRious({
+            element: canvas,
+            value: personalID
+        });
+        // Get QR code as base64 image
+        const qrCodeImage = canvas.toDataURL();
+
         event.preventDefault();
         const response = await fetch('http://localhost:8000/person', {
             method: 'POST',
@@ -19,7 +29,8 @@ const AuthorizedPersonnelComponent = () => {
                 fullName,
                 email,
                 phone,
-                personalID
+                personalID,
+                qrCodeImage
             })
         });
         const data = await response.json();

@@ -48,23 +48,22 @@ async def get_place():
 
     return data['places']
 
-@app.get('/people/{id}')
-def get_person(id: int):
-    with open(dataPath, "r") as f:
-        data = json.load(f)
-    for person in data['people']:
-        if person['id'] ==  id:
-            return 'Persona encontrada', person
-        else:
-            return 'Persona no encontrada'
-    return id
-
 @app.get("/events")
 async def get_event():
     with open(dataPath, "r") as f:
         data = json.load(f)
 
     return data['events']
+
+@app.get("/people/{personalID}")
+async def get_person(personalID: int):
+    with open(dataPath, "r") as f:
+        data = json.load(f)
+    for person in data['people']:
+        if person['personalID'] == personalID:
+            return person
+    return {"error": "Persona no encontrada"}
+
 
 # A POST endpoint to create a new person object in the database
 @app.post("/person")

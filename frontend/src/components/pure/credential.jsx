@@ -4,13 +4,13 @@ import '../../styles/forms.css';
 const CredentialComponent = () => {
     const [fullName, setFullName] = useState('');
     const [personalID, setPersonalID] = useState('');
-    const [showImage, setShowImage] = useState(false);
+    const [qrCodeImage, setQrCodeImage] = useState(null);
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        // Aquí puedes validar si el formulario fue enviado correctamente
-        // Si es así, actualiza el estado de showImage a true
-        setShowImage(true);
+        const response = await fetch(`http://localhost:8000/people/${personalID}`);
+        const data = await response.json();
+        setQrCodeImage(data.qrCodeImage);
     }
 
     return (
@@ -28,10 +28,8 @@ const CredentialComponent = () => {
                 <br />
                 <input type="submit" value="Submit" />
             </form>
-
-            {showImage && (
-                <img style={{ marginTop: '5%' }} class="img-info" src="https://th.bing.com/th/id/OIP.qHRrge25gpFW2Kthj4Qs2AHaHa?w=181&h=181&c=7&r=0&o=5&pid=1.7" alt="" />
-            )}
+            <br /><br /><br />
+            {qrCodeImage && <img src={qrCodeImage} alt="QR Code" width={150} height={150}/>}
         </div>
     );
 }
