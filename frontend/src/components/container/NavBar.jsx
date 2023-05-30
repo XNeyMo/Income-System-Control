@@ -24,7 +24,7 @@ export default function NavBar() {
                         </ul>
                     </li>
                     <li>
-                        <p className='separators'>Income Section</p>
+                        <p className='separators'>Income Data Section</p>
                         <ul className='second-level'>
                             <li>
                                 <CustomLink className='link' to="/visitor">Visitor</CustomLink>
