@@ -9,7 +9,7 @@ const EventComponent = () => {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const response = await fetch('http://localhost:8000/person', {
+        const response = await fetch('http://localhost:8000/event', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

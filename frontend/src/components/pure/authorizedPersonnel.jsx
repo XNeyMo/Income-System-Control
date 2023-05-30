@@ -8,9 +8,22 @@ const AuthorizedPersonnelComponent = () => {
     const [phone, setPhone] = useState('');
     const [personalID, setPersonalID] = useState('');
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        // Aquí puedes manejar el envío de ambos formularios
+        const response = await fetch('http://localhost:8000/person', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                fullName,
+                email,
+                phone,
+                personalID
+            })
+        });
+        const data = await response.json();
+        console.log(data);
     }
 
     return (

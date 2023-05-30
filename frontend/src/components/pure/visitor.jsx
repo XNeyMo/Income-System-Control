@@ -16,10 +16,10 @@ const VisitorComponent = () => {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        fullname: fullName,
+        fullName,
         email,
         phone,
-        personalid: personalID
+        personalID
       })
     });
     const data = await response.json();
