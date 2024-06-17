@@ -1,5 +1,5 @@
 <div align='center'>
-    <img id='theme' src='https://github.com/XNeyMo/Liav/blob/main/assets/Liav.png' height='300px' alt='Logo' />
+    <img id='theme' src='https://github.com/XNeyMo/Income-System-Control/blob/main/assets/ISC.png' height='300px' alt='Logo' />
 </div>
 
 ---
@@ -16,17 +16,7 @@
 
 ## <a name="how-to-use"> :grey_question: How to Use ?</a>
 
-To begin using the [LIAV](https://liav.netlify.app) platform, start by accessing LIAV. **If you already have an account, simply sign in** to access the platform's features. **For new users, the platform allows you to create an account directly on the same page**, making it convenient to get started quickly.
 
-Once logged in, you'll be greeted with the platform's home page, where you can **explore a wide array of products** offered. Navigate through categories and listings to find products that interest you, **all presented in an intuitive and user-friendly interface**.
-
-When you find products you wish to purchase, **add them to your shopping cart with a simple click**. Proceed to the **checkout process where you can review your selections and finalize your purchase**. Payments are processed using platform credits, **which you can manage directly within your account**. **If you need to add credits, reach out to customer service via email to initiate the process**. Once verified, **an administrator will update your credits accordingly**.
-
-As a user, you also have the flexibility to **update and manage your account information as needed**. Whether it's updating contact details or reviewing past purchases, **the platform ensures that you have full control over your user profile**.
-
-For administrators, **logging into the platform redirects you to a comprehensive dashboard**. From here, you can oversee various sections such as **user management, inventory control, and supply chain operations**. **This dashboard interface is designed to streamline administrative tasks**, offering powerful tools to efficiently manage operations and enhance organizational control.
-
-**This seamless and user-centric approach ensures that both customers and administrators alike can navigate the LIAV platform effortlessly, optimizing efficiency and maximizing user satisfaction**.
 
 ## <a name="technical-information"> :desktop_computer: Technical Information</a>
 
@@ -34,9 +24,8 @@ For administrators, **logging into the platform redirects you to a comprehensive
 
 <div align='center'>
     <img src='https://img.shields.io/badge/ReactJS-20232A?style=for-the-badge&logo=react&logoColor=61DAFB' alt='ReactJS' />
-    <img src='https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white' alt='Tailwind CSS' />
     <img src='https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=ffcc3b' alt='Python' />
-    <img src='https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white' alt='MongoDB' />
+    <img src='https://img.shields.io/badge/JSON-040404?style=for-the-badge&logo=json&logoColor=a1a1a1' alt='JSON' />
 </div>
 
 ### <a name='project-structure'> :open_file_folder: Project Structure</a>
