@@ -166,9 +166,9 @@ This project is licensed under the.
    - LinkedIn: [Michael Taboada](https://www.linkedin.com/in/michael-taboada-naranjo-0263171b1)
    - Email: [Michael Taboada](mailto:narutosaga00@gmail.com)
   
-3. :frowning_woman: **S**
-   - GitHub: 
-   - Email:
+3. :frowning_woman: **Sofia Torres**
+   - GitHub: [sotorres01](https://github.com/sotorres01)
+   - Email: [Sofia Torres](mailto:alcatelsofia48@gmail.com)
 
 4. :frowning_man: **Andres**
    - GitHub: 
