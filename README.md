@@ -4,6 +4,8 @@
 
 ---
 
+
+
 ## :scroll: Table of Contents
 
 1. :grey_question: [How to Use ?](#how-to-use)
@@ -39,6 +41,14 @@ IncomeSystemControl/
 │   │   └── data.json
 │   ├── logic/
 │   │   ├── crs/
+│   │   │   ├── __init__.py
+│   │   │   ├── authorized_personnel.py
+│   │   │   ├── event.py
+│   │   │   ├── package.py
+│   │   │   ├── person.py
+│   │   │   ├── place.py
+│   │   │   ├── register.py
+│   │   │   └── visitor.py
 │   │   └── _init_.py
 │   ├── models/
 │   │   └── models.py
@@ -48,6 +58,18 @@ IncomeSystemControl/
 │   │   ├── createPerson.py
 │   │   └── createPlace.py
 │   ├── test/
+│   │   ├── __init__.py
+│   │   ├── test_authorized_personnel.py
+│   │   ├── test_event.py
+│   │   ├── test_package.py
+│   │   ├── test_person.py
+│   │   ├── test_place.py
+│   │   ├── test_register.py
+│   │   └── test_visitor.py
+│   ├── app.py
+│   ├── index.html
+│   ├── requirements.txt
+│   ├── sonar-project.properties
 │   └── tox.ini
 ├── frontend/
 │   ├── public/
@@ -56,51 +78,39 @@ IncomeSystemControl/
 │   │   ├── logo192.png
 │   │   ├── logo512.png
 │   │   ├── manifest.json
-│   │   ├── robots.txt
+│   │   └── robots.txt
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── icons/
+│   │   │   ├── container/
 │   │   │   │   ├── adminlogo.png
 │   │   │   │   ├── inventorymanagement.svg
 │   │   │   │   ├── logo.png
 │   │   │   │   ├── logout.svg
 │   │   │   │   ├── supplychainmanagement.svg
 │   │   │   │   ├── user.svg
-│   │   │   │   └── usermanagement.svg
-│   │   │   └── icons/
-│   │   │       └── clothes.png
+│   │   │   │   └── NavBar.jsx
+│   │   │   └── pure/
+│   │   │       ├── authorizedPersonnel.jsx
+│   │   │       ├── credential.jsx
+│   │   │       ├── event.jsx
+│   │   │       ├── login.jsx
+│   │   │       ├── signin.jsx
+│   │   │       └── visitor.jsx
 │   │   ├── pages/
-│   │   │   ├── admin/
-│   │   │   │   ├── CustomerManagement.jsx
-│   │   │   │   ├── InventoryManagement.jsx
-│   │   │   │   ├── Sidebar.jsx
-│   │   │   │   ├── SupplyChainManagement.jsx
-│   │   │   │   └── UserManagement.jsx
-│   │   │   ├── forms/
-│   │   │   │   ├── CustomerForm.jsx
-│   │   │   │   ├── LoginForm.jsx
-│   │   │   │   ├── ModifyCustomerForm.jsx
-│   │   │   │   ├── ProductForm.jsx
-│   │   │   │   ├── ProviderForm.jsx
-│   │   │   │   ├── RegisterForm.jsx
-│   │   │   │   └── UserForm.jsx
-│   │   │   ├── headers/
-│   │   │   │   ├── AdminHeader.jsx
-│   │   │   │   ├── GuestHeader.jsx
-│   │   │   │   └── HomeHeader.jsx
+│   │   │   ├── 404/
+│   │   │   │   └── notFoundPage.jsx
+│   │   │   ├── auth/
+│   │   │   │   ├── loginPage.jsx
+│   │   │   │   └── signinPage.jsx
+│   │   │   ├── credential/
+│   │   │   │   └── credentialPage.jsx
 │   │   │   ├── home/
-│   │   │   │   ├── Accessories.jsx
-│   │   │   │   ├── Bottoms.jsx
-│   │   │   │   ├── Cart.jsx
-│   │   │   │   ├── Footwears.jsx
-│   │   │   │   ├── Tops.jsx
-│   │   │   │   └── User.jsx
-│   │   │   ├── modals/
-│   │   │   │   └── ProductModal.jsx
-│   │   │   ├── CreditCard.jsx
-│   │   │   ├── Modal.jsx
-│   │   │   └── ProtectedRoute.jsx
-│   │   ├── hooks/
+│   │   │   │   └── homePage.jsx
+│   │   │   └── income/
+│   │   │       ├── authorizedPersonelPage.jsx
+│   │   │       ├── eventPage.jsx
+│   │   │       └── ProductModal.jsx
+│   │   ├── styles/
 │   │   │   ├── update/
 │   │   │   │   ├── useUpdateCustomer.js
 │   │   │   │   ├── useUpdateProduct.js
@@ -118,13 +128,15 @@ IncomeSystemControl/
 │   │   │   ├── useLogin.js
 │   │   │   ├── useRegister.js
 │   │   │   └── useSearch.js
-│   │   ├── pages/
-│   │   │   ├── AdminPage.jsx
-│   │   │   ├── AuthPage.jsx
-│   │   │   └── HomePage.jsx
+│   │   ├── App.css
 │   │   ├── App.js
+│   │   ├── App.test.js
 │   │   ├── index.css
-│   │   └── index.js
+│   │   ├── index.html
+│   │   ├── index.js
+│   │   ├── logo.svg
+│   │   ├── reportWebVitals.js
+│   │   └── setupTests.js
 │   ├── package-lock.json
 │   └── package.json
 ├── .gitignore
