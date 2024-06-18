@@ -170,6 +170,6 @@ This project is licensed under the.
    - GitHub: [sotorres01](https://github.com/sotorres01)
    - Email: [Sofia Torres](mailto:alcatelsofia48@gmail.com)
 
-4. :frowning_man: **Andres**
+4. :frowning_man: **Andres Teheran**
    - GitHub: 
    - Email: 
